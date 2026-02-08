@@ -1,13 +1,216 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>my-project</title>
-    <link href="./css/styles.css" rel="stylesheet">
-  </head>
-  <body>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Anthony Olguin - Full Stack Developer</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body class=" bg-[#18202e]" >
+    <!-- Encabezado (Header) -->
+    <header class="relative z-50"> 
+        <div class="fixed top-0 right-0 left-0 bg-[#18202e]/90  flex items-center justify-between px-8 py-4 text-white z-50">
+        <div class="logo">
+            <img src="./images/logo.png" alt="Logo" class="logo-img w-12 h-12">
+        </div>
+        <nav class="hidden md:flex justify-center items-center">
+            <ul class="flex flex-row items-center gap-8 font-medium">
+                <li><a href="#inicio" class="hover:text-amber-200 transition">INICIO</a></li>
+                <li><a href="#habilidades" class="hover:text-amber-200 transition">HABILIDADES</a></li>
+                <li><a href="#proyectos" class="hover:text-amber-200 transition">PROYECTOS</a></li>
+            </ul>
+        </nav>
+        <div class="border border-amber-50 rounded-3xl p-1 pl-4 flex items-center cursor-pointer hover:bg-white/10 transition group">
+            <button class="text-sm font-bold mr-2">CONTACTO</button> 
+            <div class="rounded-full bg-[#ddeb9a] w-8 h-8 flex items-center justify-center group-hover:rotate-45">
+                <img src="./images/arrow_finally.png" class="w-4 h-4">
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="relative bg-gradient-main min-h-screen flex flex-col items-center pt-32 md:pt-44 overflow-hidden" id="inicio">
     
-  </body>
+    <div class="text-center z-10 mb-8 px-4">
+        <h1 class="text-4xl md:text-7xl text-white font-bold leading-tight">
+            Yo soy  <span class="text-amber-200">Anthony Olguin</span>
+        </h1>
+        <p class="text-2xl md:text-5xl text-white mt-4 font-light">
+            <span class="border-2 border-gray-500 rounded-full px-6 py-1 inline-block">Front End</span> Developer
+        </p>
+    </div>
+
+    <div class="relative w-full flex justify-center items-end mt-auto px-4">
+        
+        <div class="absolute left-10 bottom-1/4 hidden xl:block bg-slate-900/95 backdrop-blur-md p-6 rounded-2xl border border-white/10 w-72 transform -rotate-6 shadow-2xl z-20">
+            <p class="text-amber-200 font-bold mb-2 flex items-center gap-2">
+                Reseña de Cliente <img src="https://flagcdn.com/w20/au.png" width="20" alt="Australia">
+            </p>
+            <p class="text-gray-300 text-sm leading-relaxed italic">"Increíble trabajo en el desarrollo de nuestra plataforma. La atención al detalle es excepcional."</p>
+        </div>
+
+        <div class="relative z-10 flex justify-center translate-y-4">
+            <img src="./images/tony_foto.png" alt="Anthony Olguin" class="w-full max-w-lg md:max-w-2xl object-contain">
+            
+            <div class="absolute bottom-20 left-1/2 transform -translate-x-1/2 z-30">
+                <a href="#proyectos" class="bg-[#D4FF59] text-black px-8 py-3 rounded-full font-black uppercase tracking-widest text-xs shadow-lg hover:scale-105 transition-transform whitespace-nowrap">
+                    Mis Proyectos
+                </a>
+            </div>
+        </div>
+
+        <div class="absolute right-10 bottom-1/4 hidden xl:block bg-slate-900/95 backdrop-blur-md p-6 rounded-2xl border border-white/10 w-80 transform rotate-3 shadow-2xl z-20 text-white">
+            <p class="text-xs font-black tracking-[0.2em] mb-6 text-gray-400 uppercase">Mi Experiencia</p>
+            <div class="space-y-5">
+                <div>
+                    <div class="flex justify-between text-[10px] font-bold mb-2 tracking-widest"><span>BACKEND</span><span class="text-amber-200">75%</span></div>
+                    <div class="w-full bg-gray-800 h-1.5 rounded-full overflow-hidden">
+                        <div class="bg-amber-200 h-full rounded-full" style="width: 75%"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex justify-between text-[10px] font-bold mb-2 tracking-widest"><span>CMS</span><span class="text-amber-200">85%</span></div>
+                    <div class="w-full bg-gray-800 h-1.5 rounded-full overflow-hidden">
+                        <div class="bg-amber-200 h-full rounded-full" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex justify-between text-[10px] font-bold mb-2 tracking-widest"><span>FRONTEND</span><span class="text-amber-200">70%</span></div>
+                    <div class="w-full bg-gray-800 h-1.5 rounded-full overflow-hidden">
+                        <div class="bg-amber-200 h-full rounded-full" style="width: 70%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Sección ¿Quién soy? -->
+    <section class="about" id="about">
+        <div class="about-container">
+            <h2 class="section-title">WHO AM I?</h2>
+    </section>
+
+     <div class="about-content">
+                <div class="about-text">
+                    <p>I am a full-stack developer passionate about creating engaging user experiences. I also know some WordPress front and development with Elementary and WordPress.</p>
+                    <p>Programming is my passion, that's the reason I am working at the time of my academic career.</p>
+                    <p>Additionally, I like to play PC games and I am very interested in the future trend in AI regularly.</p>
+                </div>
+                <div class="about-cards">
+                    <img src="./public/card-1.jpg" alt="Tarjeta 1" class="about-card-img">
+                    <img src="./public/card-2.jpg" alt="Tarjeta 2" class="about-card-img">
+                </div>
+            </div>
+            <a href="#proyectos" class="btn-show-projects">SHOW MY PROJECTS</a>
+        </div>
+
+    <!-- Sección de Habilidades -->
+    <section class="skills" id="habilidades">
+        <div class="skills-container">
+            <h2 class="section-title">MY SKILLS</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <img src="./public/html-icon.svg" alt="HTML5" class="skill-icon">
+                    <p class="skill-name">HTML5</p>
+                </div>
+                <div class="skill-card">
+                    <img src="./public/css-icon.svg" alt="CSS3" class="skill-icon">
+                    <p class="skill-name">CSS3</p>
+                </div>
+                <div class="skill-card">
+                    <img src="./public/js-icon.svg" alt="JavaScript" class="skill-icon">
+                    <p class="skill-name">JavaScript</p>
+                </div>
+                <div class="skill-card">
+                    <img src="./public/react-icon.svg" alt="React" class="skill-icon">
+                    <p class="skill-name">React</p>
+                </div>
+                <div class="experience-card">
+                    <div class="experience-content">
+                        <p class="experience-number">4</p>
+                        <p class="experience-text">Years<br>Experience<br>Working</p>
+                    </div>
+                    <a href="#" class="btn-download-cv">DOWNLOAD CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Habilidades Adicionales -->
+    <section class="additional-skills">
+        <div class="additional-skills-container">
+            <h3 class="section-title">ADDITIONAL SKILLS</h3>
+            <div class="additional-skills-grid">
+                <img src="./public/bootstrap-icon.svg" alt="Bootstrap" class="additional-skill-icon">
+                <img src="./public/axios-icon.svg" alt="Axios" class="additional-skill-icon">
+                <img src="./public/nodejs-icon.svg" alt="Node.js" class="additional-skill-icon">
+                <img src="./public/nextjs-icon.svg" alt="Next.js" class="additional-skill-icon">
+                <img src="./public/mongodb-icon.svg" alt="MongoDB" class="additional-skill-icon">
+                <img src="./public/wordpress-icon.svg" alt="WordPress" class="additional-skill-icon">
+                <img src="./public/figma-icon.svg" alt="Figma" class="additional-skill-icon">
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Proyectos Destacados -->
+    <section class="projects" id="proyectos">
+        <div class="projects-container">
+            <h2 class="section-title">THE WORKS CLOSEST TO MY HEART</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="./public/project-1.jpg" alt="Proyecto 1" class="project-image">
+                    <h3 class="project-title">Project One</h3>
+                    <p class="project-description">Descripción del proyecto</p>
+                    <a href="#" class="project-link">Ver más →</a>
+                </div>
+                <div class="project-card">
+                    <img src="./public/project-2.jpg" alt="Proyecto 2" class="project-image">
+                    <h3 class="project-title">Plumbing Company</h3>
+                    <p class="project-description">Descripción del proyecto</p>
+                    <a href="#" class="project-link">Ver más →</a>
+                </div>
+                <div class="project-card">
+                    <img src="./public/project-3.jpg" alt="Proyecto 3" class="project-image">
+                    <h3 class="project-title">Project Three</h3>
+                    <p class="project-description">Descripción del proyecto</p>
+                    <a href="#" class="project-link">Ver más →</a>
+                </div>
+            </div>
+            <a href="#" class="btn-show-projects">SHOW MY PROJECTS</a>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section class="contact" id="contacto">
+        <div class="contact-container">
+            <h2 class="section-title">LET'S HAVE A CHAT</h2>
+            <form class="contact-form" method="POST" action="#">
+                <div class="form-group">
+                    <input type="text" id="nombre" name="nombre" placeholder="YOUR NAME" required class="form-input">
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="EMAIL ADDRESS" required class="form-input">
+                </div>
+                <div class="form-group">
+                    <textarea id="mensaje" name="mensaje" placeholder="CHAT HERE" rows="5" required class="form-textarea"></textarea>
+                </div>
+                <button type="submit" class="btn-submit">SUBMIT HERE</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Pie de página (Footer) -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p class="footer-text">&copy; 2026 Ferdous Ahmed. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" class="social-link">LinkedIn</a>
+                <a href="#" class="social-link">GitHub</a>
+                <a href="#" class="social-link">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
 </html>
