@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Anthony Olguin - Full Stack Developer</title>
+    <title>Portfolio - Anthony Olguin - FrontEnd</title>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
-<body class=" bg-[#18202e]" >
+<body class=" bg-[#0e1219]" >
     <!-- Encabezado (Header) -->
     <header class="relative z-50"> 
         <div class="fixed top-0 right-0 left-0 bg-[#18202e]/90  flex items-center justify-between px-8 py-4 text-white z-50">
@@ -29,7 +29,7 @@
     </div>
 </header>
 
-<section class="relative bg-gradient-main min-h-screen flex flex-col items-center pt-32 md:pt-44 overflow-hidden" id="inicio">
+<section class="relative bg-gradient-main min-h-screen flex flex-col items-center pt-44 overflow-hidden" id="inicio">
     
     <div class="text-center z-10 mb-8 px-4">
         <h1 class="text-7xl text-white font-bold leading-tight">
@@ -44,9 +44,9 @@
         
         <div class="absolute left-10 bottom-1/4 hidden xl:block bg-slate-900 p-6 rounded-2xl border border-white/10 w-72 -rotate-6 shadow-2xl z-20">
             <p class="text-amber-200 font-bold mb-2 flex items-center gap-2">
-                Reseña de Cliente <img src="https://flagcdn.com/w20/au.png" width="20" alt="Australia">
+                Reseña de mi Mama ❤️
             </p>
-            <p class="text-gray-300 text-sm leading-relaxed italic">"Increíble trabajo en el desarrollo de nuestra plataforma. La atención al detalle es excepcional."</p>
+            <p class="text-gray-300 text-sm leading-relaxed italic">"Increíble trabajo en el desarrollo de nuestra app de la casa. La atención al detalle es excepcional."</p>
         </div>
 
         <div class="relative z-10 flex justify-center translate-y-4">
@@ -86,53 +86,91 @@
 </section>
 
     <!-- Sección ¿Quién soy? -->
-    <section class="about" id="about">
-        <div class="about-container">
-            <h2 class="section-title">WHO AM I?</h2>
-    </section>
+    <section class="relative min-h-screen flex flex-col items-center pt-68 overflow-hidden text-white/90" id="about">
+            <h2 class="text-7xl text-yellow-200">QUIEN SOY?</h2>
+    
 
-     <div class="about-content">
-                <div class="about-text">
-                    <p>I am a full-stack developer passionate about creating engaging user experiences. I also know some WordPress front and development with Elementary and WordPress.</p>
-                    <p>Programming is my passion, that's the reason I am working at the time of my academic career.</p>
-                    <p>Additionally, I like to play PC games and I am very interested in the future trend in AI regularly.</p>
+     <div class="about-content w-200 text-center text-white/80 pt-12">
+                <div class="about-text ">
+                    <p class="">Soy un desarrolador Front-End en desarrollo buscan mi parte en este mundo laboral, siempre e visto este mundo como parte de mi desde muy pequeño y ahora e tomado mi salto de fe.</p> <br>
+
+                    <p>Crecí con los videojuegos y la cultura geek, lo que me llevó directo al mundo del código. He trabajado en proyectos pequeños. Mi banda favorita es A7X, ademas de amar el genero de la electrónica y esos sintetizadores oscuros tipo Hotline Miami.</p> <br>
+
+                    <p>Mis sagas favorita son tf2 y warframe agreguen en steam para contactarme y jugar <a href="https://steamcommunity.com/id/carjotv/" class="font-bold">CarjoTv</a></p> <br>
                 </div>
-                <div class="about-cards">
-                    <img src="./public/card-1.jpg" alt="Tarjeta 1" class="about-card-img">
-                    <img src="./public/card-2.jpg" alt="Tarjeta 2" class="about-card-img">
+
+                 <div class="absolute left-40 bottom-3/4 bg-slate-900 p-6 rounded-2xl border border-white/10 w-40 -rotate-8 shadow-2xl z-20">
+                    <img src="./images/slenderman.jpg" alt="Tarjeta 1" class="about-card-img">
+                 </div>
+
+                <div class="absolute left-40 bottom-1/4 bg-slate-900 p-6 rounded-2xl border border-white/10 w-40 rotate-6 shadow-2xl z-20">
+                    <img src="./images/montaña.jpg" alt="Tarjeta 2" class="about-card-img">
+                </div>
+
+                <div class="absolute right-40 bottom-1/2 bg-slate-900 p-6 rounded-2xl border border-white/10 w-40 rotate-6 shadow-2xl z-20">
+                    <img src="./images/lentes.jpg" alt="Tarjeta 3" class="about-card-img">
+                </div>
+                
+                
+                <div class="absolute left-1/2  -translate-x-1/2 z-30">
+                    <a href="#proyectos" class="bg-[#D4FF59] text-black px-8 py-3 rounded-full font-black uppercase text-xs shadow-lg">
+                        Mostrar mis Proyectos
+                    </a>
+                </div>
+        </section>
+
+
+        <!--Habilidades-->
+    <section class="relative flex flex-col items-center overflow-hidden" id="habilidades">
+        <div class="max-w-7xl w-full px-6">
+            <h2 class="text-amber-200 text-5xl font-bold text-center mb-16 tracking-widest uppercase">Mis Habilidades</h2>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            
+            <div class="lg:col-span-2 grid grid-cols-2 sm:grid-cols-4 gap-4">
+                <div class="bg-slate-900/60 border border-white/10 rounded-2xl p-8 flex items-center justify-center hover:bg-slate-800 transition shadow-xl aspect-square">
+                    <img src="./icons/html-icon.svg" alt="HTML5" class="w-16 h-16 object-contain">
+                </div>
+                
+                <div class="bg-slate-900/60 border border-white/10 rounded-2xl p-8 flex items-center justify-center hover:bg-slate-800 transition shadow-xl aspect-square">
+                    <img src="./icons/tailwind-css-icon.svg" alt="CSS3" class="w-16 h-16 object-contain">
+                </div>  
+
+                <div class="bg-slate-900/60 border border-white/10 rounded-2xl p-8 flex items-center justify-center hover:bg-slate-800 transition shadow-xl aspect-square">
+                    <img src="./icons/javascript-programming-language-icon.svg" alt="JS" class="w-16 h-16 object-contain">
+                </div>
+
+                <div class="bg-slate-900/60 border border-white/10 rounded-2xl p-8 flex items-center justify-center hover:bg-slate-800 transition shadow-xl aspect-square">
+                    <img src="./icons/java-icon.svg" alt="Java" class="w-16 h-16 object-contain">
+                </div>
+
+                <div class="bg-slate-900/60 border border-white/10 rounded-2xl p-8 flex items-center justify-center hover:bg-slate-800 transition shadow-xl aspect-square">
+                    <img src="./public/next-icon.svg" alt="Next" class="w-16 h-16 object-contain">
+                </div>
+
+                <div class="bg-slate-900/60 border border-white/10 rounded-2xl p-8 flex items-center justify-center hover:bg-slate-800 transition shadow-xl aspect-square">
+                    <img src="./public/node-icon.svg" alt="Node" class="w-16 h-16 object-contain">
+                </div>
+
+                <div class="bg-slate-900/60 border border-white/10 rounded-2xl p-8 flex items-center justify-center hover:bg-slate-800 transition shadow-xl aspect-square">
+                    <img src="./public/tailwind-icon.svg" alt="Tailwind" class="w-16 h-16 object-contain">
+                </div>
+
+                <div class="bg-slate-900/60 border border-white/10 rounded-2xl p-8 flex items-center justify-center hover:bg-slate-800 transition shadow-xl aspect-square">
+                    <img src="./public/mongodb-icon.svg" alt="MongoDB" class="w-16 h-16 object-contain">
                 </div>
             </div>
-            <a href="#proyectos" class="btn-show-projects">SHOW MY PROJECTS</a>
-        </div>
 
-    <!-- Sección de Habilidades -->
-    <section class="skills" id="habilidades">
-        <div class="skills-container">
-            <h2 class="section-title">MY SKILLS</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <img src="./public/html-icon.svg" alt="HTML5" class="skill-icon">
-                    <p class="skill-name">HTML5</p>
-                </div>
-                <div class="skill-card">
-                    <img src="./public/css-icon.svg" alt="CSS3" class="skill-icon">
-                    <p class="skill-name">CSS3</p>
-                </div>
-                <div class="skill-card">
-                    <img src="./public/js-icon.svg" alt="JavaScript" class="skill-icon">
-                    <p class="skill-name">JavaScript</p>
-                </div>
-                <div class="skill-card">
-                    <img src="./public/react-icon.svg" alt="React" class="skill-icon">
-                    <p class="skill-name">React</p>
-                </div>
-                <div class="experience-card">
-                    <div class="experience-content">
-                        <p class="experience-number">4</p>
-                        <p class="experience-text">Years<br>Experience<br>Working</p>
-                    </div>
-                    <a href="#" class="btn-download-cv">DOWNLOAD CV</a>
-                </div>
+            <div class="bg-slate-900/80 border border-white/10 rounded-2xl p-10 flex flex-col items-center justify-center text-center shadow-2xl">
+                <span class="text-7xl font-bold text-white mb-2">2</span>
+                <p class="text-2xl text-white font-medium leading-tight mb-8">
+                    Años<br>De<br>Experiencia
+                </p>
+                <a href="#" class="bg-[#D4FF59] text-black font-bold py-3 px-8 rounded-full hover:bg-lime-400 transition-colors uppercase">
+                    Descargar CV
+                </a>
+            </div>
+
             </div>
         </div>
     </section>
