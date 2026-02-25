@@ -15,14 +15,14 @@ function cargarHabilidades() {
     const contenedor = document.getElementById('grid-habilidades');
     habilidades.forEach((hab, index) => {
         const div = document.createElement('div');
-        // Añadimos opacidad 0 y una transición para la animación de carga
+    
         div.className = "bg-slate-900/60 border border-white/10 rounded-2xl p-8 flex items-center justify-center hover:bg-slate-800 transition shadow-xl aspect-square opacity-0 translate-y-4";
-        div.style.transition = `all 0.5s ease ${index * 0.1}s`; // Delay escalonado
+        div.style.transition = `all 0.5s ease ${index * 0.1}s`;
         
         div.innerHTML = `<img src="${hab.icono}" alt="${hab.nombre}" class="w-16 h-16 object-contain">`;
         contenedor.appendChild(div);
 
-        // Disparamos la animación después de un breve momento
+      
         setTimeout(() => {
             div.classList.remove('opacity-0', 'translate-y-4');
         }, 100);
